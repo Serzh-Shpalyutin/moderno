@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Artem Kukharchuk",
+  "author": "Serzh Shpalyutin",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.12",
@@ -21,5 +22,8 @@
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "del": "^5.1.0"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
   }
 }
