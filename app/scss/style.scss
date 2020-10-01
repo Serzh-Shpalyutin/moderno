@@ -407,6 +407,41 @@
     height: 64px;
 }
 
-
-
 //end author
+
+//start tutorials
+
+.tutorials {
+    padding: 75px 0px 120px;
+}
+
+.tutorials__title {
+    padding-bottom: 50px;
+}
+
+.tutorials__inner {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    .tutorial__item {
+        max-width: 370px;
+        background-color: #f8f8f8;
+        .tutorial__item-img {
+            width: 370px;
+            height: 272px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .tutorial__item-link {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 60px;
+            color: #000;
+            padding: 20px 0px;
+        }
+    }
+}
+
+//end tutorials
