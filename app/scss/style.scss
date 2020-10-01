@@ -288,7 +288,7 @@
 
 .product-slider {
     margin: 110px 0 120px;
-    
+
     .slick-dots {
         text-align: center;
         margin-top: 50px;
@@ -320,3 +320,49 @@
 
 
 //end product-slider
+
+//start advantages
+
+.advantages {
+    background-color: #263238;
+    padding: 110px 0;
+}
+
+.advantages__title { 
+    color: #fff;
+}
+
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    max-width: 370px;
+    text-align: center;
+    padding: 0px 15px;
+    transition: all .3s;
+    border: 1px solid transparent;
+    &-img {
+        height: 114px;
+        width: 114px;
+        margin-bottom: 30px;
+    }
+
+    &-title {
+        margin-bottom: 25px;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    &-text {
+        font-size: 15px;
+    }
+}
+
+.advantages__item:hover {
+    border: 1px solid #324047;
+}
+
+//end advantages
