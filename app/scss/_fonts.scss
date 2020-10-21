@@ -52,6 +52,21 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-sort-amount-desc:before {
+    content: "\e909";
+  }
+  .icon-sort:before {
+    content: "\e90a";
+  }
+  .icon-th-list:before {
+    content: "\e906";
+  }
+  .icon-th-large:before {
+    content: "\e907";
+  }
+  .icon-search:before {
+    content: "\e908";
+  }
   .icon-bolt:before {
     content: "\e905";
   }
@@ -70,4 +85,7 @@
   .icon-phone:before {
     content: "\e901";
   }
+
+
+  
   
