@@ -1047,11 +1047,11 @@
 }
 
 .link-fwitter {
-    background-position: -29px 0px;
+    background-position: -28px 0px;
 }
 
 .link-youtube {
-    background-position: -0px -29px;
+    background-position: -0px -28px;
 }
 
 .link-pinterest {
@@ -1218,7 +1218,7 @@
     border: 1px solid #dedede;
     padding: 0px 32px 32px;
     margin-bottom: 30px;
-    min-width: 270px;
+    max-width: 270px;
     
     &__title {
         border-bottom: 1px solid #dde3e8;
@@ -2261,5 +2261,223 @@
 
 // end settings
 
+// start profile
+
+.profile__inner {
+    display: flex;
+}
+
+.profile__aside {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+}
+
+.profile__content {
+    width: 100%;
+}
+
+.profile-status {
+    padding-left: 26px;
+    position: relative;
+    color: #70838d;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 9px;
+        top: 13px;
+        height: 9px;
+        width: 9px;
+        border-radius: 50%;
+        
+    }
+
+    &--on {
+        &::before {
+            background-color: $color-green;
+        }
+    }
+
+    &--off {
+        &::before {
+            background-color: red;
+        }
+    }
+}
+
+.profile__aside-btns {
+    margin-bottom: 50px;
+}
+
+.profile__aside-link {
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    position: relative;
+    border: none;
+    cursor: pointer;
+
+    &--bg {
+        background-color: #546e7a;
+
+        &::before {
+            content: "\f003";
+            font-family: 'icomoon';
+            position: absolute;
+            left: 53px;
+            font-size: 16px;
+        }
+    }
+
+    &--green {
+        background-color: $color-green;
+    }
+}
+
+.profile__banner {
+    border: 1px solid #dedede;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 43px;
+}
+
+.profile__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 332px;
+}
+
+.profile__items {
+    display: flex;
+    border: 1px solid #dedede;
+}
+
+.profile__item {
+    width: 25%;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 5px 17px;
+    font-size: 14px;
+    font-weight: 500;
+    & + & {
+        border-left: 1px solid #dedede;
+    }
+}
+
+.profile__item-title {
+    color: $bg-color;
+}
+
+.profile__item-content {
+    color: #707070;
+    &.profile__item-sales {
+        color: $bg-color;
+    }
+}
+
+.profile__settings {
+    margin-bottom: 115px;
+}
+
+.tab--about,
+.tab--products,
+.tab--message,
+.tab--reviews,
+.tab--followers {
+    position: relative;
+}
+
+.tab--about::before,
+.tab--products::before,
+.tab--message::before,
+.tab--reviews::before,
+.tab--followers::before {
+    font-family: 'icomoon';
+    position: absolute;
+    top: 15px;
+}
+
+
+.tab--about::before {
+    content: "\f007";
+}
+.tab--products::before {
+    content: "\f0b1";
+}
+.tab--message::before {
+    content: "\f003";
+}
+.tab--reviews::before {
+    content: "\f0e6";
+}
+.tab--followers::before {
+    content: "\f0c0";
+}
+
+.personal-box {
+    background-color: #fff;
+    padding: 35px 40px 25px;
+    border: 1px solid #dedede;
+}
+
+.personal-box__title {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 20px;
+    color: $bg-color;
+}
+
+.personal-box__text {
+    margin-bottom: 40px;
+
+    p {
+        color: #707070;
+    }
+}
+
+.personal-box__head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px; 
+    font-size: 16px;
+    color: $bg-color;
+}
+
+.personal-box__name {
+    font-weight: 500;
+    font-style: italic;
+}
+
+.personal-box__numb {
+    font-weight: 700;
+}
+
+.personal-box__line {
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    margin-bottom: 23px;
+
+    span {
+        display: block;
+        border-radius: 3px;
+        height: 15px;
+        background-color: $color-green;
+    }
+}
+
+
+
+// end profile
+
 @import "media";
+
   
