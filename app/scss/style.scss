@@ -2474,9 +2474,162 @@
     }
 }
 
-
-
 // end profile
+
+// start upload
+
+.upload__inner {
+    background-color: #fff;
+    border: 1px solid #d7d7d7;
+    margin-bottom: 110px;
+}
+
+.upload__title {
+    font-weight: 500;
+    font-size: 24px;
+    padding: 16px 35px 18px;
+    color: $bg-color;
+    border-bottom: 1px solid #d7d7d7;
+    margin-bottom: 40px;
+}
+
+.upload__content {
+    margin-bottom: 30px;
+    padding-left: 45px;
+    padding-right: 50px;
+
+    button {
+        border: none;
+        padding: 15px 36px;
+        color: #fff;
+        background-color: $color-green;
+        margin-left: 175px;
+        cursor: pointer;  
+    }
+}
+
+.upload__line {
+    margin-bottom: 25px;
+    display: flex;
+
+    label {
+        color: #444;
+        padding-right: 15px;
+        min-width: 175px;
+        padding-top: 5px;
+
+        span {
+            color: $color-green;
+        }
+
+        &::placeholder {
+            color: #707070;
+        }
+    }
+
+    select,
+    input,
+    textarea {
+        width: 100%;
+        display: block;
+        border: 1px solid #d7d7d7;
+        height: 40px;
+        background-color: #f9f9f9;
+        padding: 0px 18px;
+        outline-color: #dedede;
+    }
+
+    textarea {
+        resize: none;
+        height: 150px;
+        padding: 8px 18px;
+    }
+
+    .jq-selectbox {
+        width: 100%;
+    }
+
+    .jq-selectbox__select {
+        height: 40px;
+        padding: 3px 18px;
+        border: 1px solid #d7d7d7;
+        color: #707070;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 4px;
+        background: #f9f9f9;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
+    .jq-selectbox__trigger-arrow  {
+        border: none;
+        position: relative;
+
+        &:before {
+            content: "\f0d7";
+            font-family: 'icomoon';
+            position: absolute;
+            bottom: -22px;
+            left: 20px;
+            font-size: 15px;
+        }
+    }
+
+    .jq-selectbox__trigger {
+        border-left: none;
+    }
+
+    .jq-file {
+        padding: 3px 18px;
+        width: 100%;
+        border-radius: 0px;
+        box-shadow: none;
+        border: 1px solid #d7d7d7;
+        background: #f9f9f9;
+        height: 40px;
+    }
+
+    .jq-file.focused .jq-file__name {
+        border: none;
+    }
+
+    .jq-file__name {
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        padding: 0;
+        margin-left: 100px;
+        border: none;
+        border-bottom-color: none;
+        border-radius: 0px;
+        background: transparent;
+        box-shadow: none;
+        color: #707070;
+        font-size: 12px;
+    }
+
+    .jq-file__browse {
+        position: absolute;
+        top: 5px;
+        right: auto;
+        left: 9px;
+        line-height: 26px;
+        padding: 0px 12px;
+        border-left: none;
+        border: 1px solid #d7d7d7;
+        border-left: 1px solid #d7d7d7;
+        border-radius: 0px;
+        background: #fff;
+        box-shadow: none;
+        text-shadow: none;
+        font-size: 12px;
+        color: #444;
+    }
+}
+
+
+// end upload
 
 @import "media";
 
